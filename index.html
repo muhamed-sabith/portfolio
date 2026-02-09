@@ -32,10 +32,84 @@
                  <li><a href="#about" onclick="togglemenu()">About</a></li>
                 <li><a href="#experience" onclick="togglemenu()">Experience</a></li>
                 <li><a href="#projects" onclick="togglemenu()">Projects</a></li>
-                <li><a href="#contacts" onclick="togglemenu()">Contact</a></li>
+                <li><a href="#contact" onclick="togglemenu()">Contact</a></li>
             </div>
          </div>
     </nav>
-    <script> src="script.js"</script>
+
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/profile-pic.png" alt="sabith profile-pic">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">HEllo I'm</p>
+            <h1 class="title">Muhamed Sabith P</h1>
+            <p class="section__text__p2">Junior Data Analyst</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assets/resume-example.pdf')">Download CV</button>
+
+
+              <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info </button>
+
+            </div>
+
+            <div id="socials-container">
+                <img 
+                src="./assets/linkedin.png" 
+                alt="My linkedin profile"
+                class="icon" onclick="location.href='https://www.linkedin.com/in/muhamed-sabith-p-41683a366?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app'"
+                />
+                <img 
+                src="./assets/github.png" 
+                alt="My Github profile"
+                class="icon" onclick="location.href='https://github.com/muhamed-sabith'"
+                />
+            </div>
+        </div>
+    </section>
+<section id="about">
+    <p clas="section__text__p1">Get To  Know More</p>
+    <h1 class="title">About Me</h1>
+    <div class="section-container">
+        <div class="section__pic-container">
+            <img src="./assets/about-pic.png" 
+            alt="profile picture"  
+            class="about-pic" 
+            />
+        </div>
+        <div class="about-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <img src="./assets/experience.png" 
+                    alt="experience icon"
+                    class="icon"
+                    />
+                    <h3>Experience</h3>
+                    <p>6 months <br>Data Science Intern</p>
+                </div>
+                <div class="details-container">
+                      <img src="./assets/education.png" 
+                    alt="educatuion icon"
+                    class="icon"
+                    />
+                    <h3>Education</h3>
+                    <p>BCA <br>HSS-SCIENCE</p>
+                </div>
+            </div>
+            <div class="text-container">
+                <p>
+                    Motivated Computer Applications graduate with a strong interest in data analysis and data-related roles. Completed a Bachelor of Computer Applications with hands-on academic project experience and a 6-month diploma in Data Science. Comfortable working with Python and SQL, handling data cleaning, basic analysis, and validation tasks. A quick learner with good attention to detail, looking for an entry-level opportunity to grow skills and contribute to real-world data projects.
+                </p>
+            </div>
+        </div>
+    </div>
+    <img src="assets/arrow.png" 
+    alt="arrow icon"
+    class="icon-arrow"
+    onclick="location.href='./#experience'"
+    />
+</section>
+
+    <script src="script.js"></script>
 </body>
 </html>
